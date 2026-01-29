@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazin Sayed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="neural-network" id="neuralNetwork"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">&lt;Mazin Sayed&gt;</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="glitch-wrapper">
+                    <h1 class="hero-title glitch" data-text="AI Developer">AI Developer</h1>
+                </div>
+                <h2 class="hero-subtitle">Building Intelligent Solutions</h2>
+                <p class="hero-description">
+                    Computer Science Student specializing in Artificial Intelligence, Machine Learning, 
+                    and Full-Stack Web Development. Transforming ideas into innovative digital experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-box">
+                    <div class="code-header">
+                        <span class="code-dot" style="background: #ff5f57;"></span>
+                        <span class="code-dot" style="background: #ffbd2e;"></span>
+                        <span class="code-dot" style="background: #28ca42;"></span>
+                    </div>
+                    <pre class="code-content" id="typewriter"></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate Computer Science student with a deep fascination for Artificial Intelligence 
+                        and its transformative potential. My journey in tech spans from building neural networks 
+                        to crafting elegant web applications.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="30">0</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="15">0</h3>
+                            <p class="stat-label">Technologies Mastered</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="1000">0</h3>
+                            <p class="stat-label">Lines of Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="80" fill="var(--accent-color)" opacity="0.2"/>
+                                <circle cx="100" cy="80" r="30" fill="var(--accent-color)" opacity="0.6"/>
+                                <path d="M 50 120 Q 100 150 150 120" stroke="var(--accent-color)" stroke-width="3" fill="none" opacity="0.6"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate Computer Science student with a deep fascination for Artificial Intelligence 
+                        and its transformative potential. My journey in tech spans from building neural networks 
+                        to crafting elegant web applications.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="50">0</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="15">0</h3>
+                            <p class="stat-label">Technologies Mastered</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="1000">0</h3>
+                            <p class="stat-label">Lines of Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="80" fill="var(--accent-color)" opacity="0.2"/>
+                                <circle cx="100" cy="80" r="30" fill="var(--accent-color)" opacity="0.6"/>
+                                <path d="M 50 120 Q 100 150 150 120" stroke="var(--accent-color)" stroke-width="3" fill="none" opacity="0.6"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">My Skills</h2>
+            </div>
+            
+            <h3 class="skills-subtitle">What I'm Good At</h3>
+            <div class="simple-skills-grid">
+                <div class="simple-skill-box">
+                    <div class="skill-icon">💻</div>
+                    <h4>HTML & CSS</h4>
+                    <p>Building beautiful websites</p>
+                </div>
+                <div class="simple-skill-box">
+                    <div class="skill-icon">🐍</div>
+                    <h4>Python</h4>
+                    <p>Programming & scripting</p>
+                </div>
+                <div class="simple-skill-box">
+                    <div class="skill-icon">⚡</div>
+                    <h4>JavaScript</h4>
+                    <p>Interactive web apps</p>
+                </div>
+            </div>
+
+            <h3 class="skills-subtitle">What I'm Working On</h3>
+            <div class="simple-skills-grid">
+                <div class="simple-skill-box learning">
+                    <div class="skill-icon">🤖</div>
+                    <h4>Machine Learning</h4>
+                    <p>AI and data science</p>
+                </div>
+                <div class="simple-skill-box learning">
+                    <div class="skill-icon">🔧</div>
+                    <h4>Automation</h4>
+                    <p>Making tasks easier</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">My Projects</h2>
+            </div>
+            <div class="simple-projects-grid">
+                <!-- Python Project -->
+                <div class="simple-project-card">
+                    <div class="project-number">01</div>
+                    <div class="project-emoji">🐍</div>
+                    <h3 class="simple-project-title">Python Automation Tool</h3>
+                    <p class="simple-project-desc">
+                        A Python script that automates daily tasks and saves time. 
+                        Built with Python to handle file organization and data processing.
+                    </p>
+                    <div class="project-tech-simple">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Automation</span>
+                    </div>
+                    <a href="#" class="simple-project-link">View Project →</a>
+                </div>
+
+                <!-- HTML/CSS Project -->
+                <div class="simple-project-card">
+                    <div class="project-number">02</div>
+                    <div class="project-emoji">🌐</div>
+                    <h3 class="simple-project-title">Personal Website</h3>
+                    <p class="simple-project-desc">
+                        A clean and responsive website built from scratch using HTML and CSS. 
+                        Features modern design and smooth animations.
+                    </p>
+                    <div class="project-tech-simple">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                    </div>
+                    <a href="#" class="simple-project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Get in Touch</h3>
+                    <p class="contact-text">
+                        I'm always excited to collaborate on innovative projects or discuss new opportunities. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>mazinsayed</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            <span>github.com/aidev</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            <span>linkedin.com/in/aidev</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-input" required>
+                        <label for="name" class="form-label">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-input" required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                        <label for="subject" class="form-label">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 AI Portfolio. Crafted with passion and code.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
