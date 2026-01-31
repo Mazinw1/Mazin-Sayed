@@ -1,5 +1,8 @@
 // Configuration
-const API_BASE_URL = 'http://localhost:5000/api';
+// Auto-detects localhost vs production (Vercel)
+const API_BASE_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:5000/api' 
+    : '/api';
 
 // Neural Network Background
 class NeuralNetwork {
@@ -86,7 +89,7 @@ class Typewriter {
     constructor(element) {
         this.element = element;
         this.texts = [
-            'Name: Mazin Sayed\nAge: 18y\nUniveristy: Galala (GU)\nFaculty: Computer Science : Artificial Intelligence'
+            'Name: Mazin Sayed\nAge: 18y\nUniversity: Galala (GU)\nFaculty: Computer Science\nSpecialization: Artificial Intelligence'
         ];
         this.textIndex = 0;
         this.charIndex = 0;
